@@ -1,0 +1,457 @@
+/* =====================================
+   CONFIGURAÇÕES GERAIS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #222;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* =====================================
+   TELA 1 - VERMELHA
+===================================== */
+
+.tela-1 {
+    width: 100%;
+    height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(210, 0, 0, 0.90),
+            rgba(210, 0, 0, 0.90)
+        ),
+        url("https://d.wattpad.com/story_parts/439173100/images/14d05a40f0e07b09875009860631.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    /* centralização */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.tela-1 h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.tela-1 p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.botao {
+    display: inline-block;
+
+    padding: 14px 35px;
+
+    background-color: white;
+    color: #d40000;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+}
+
+
+/* =====================================
+   TELA 2 - AZUL
+===================================== */
+
+.tela-2 {
+    background-color: #9ee5f5;
+
+    color: #1c5260;
+
+    display: flex;
+    align-items: center;
+}
+
+.tela-2 .conteudo {
+    text-align: center;
+}
+
+.tela-2 h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    max-width: 650px;
+
+    margin: 0 auto 60px;
+
+    line-height: 1.6;
+
+    color: #397582;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.35);
+
+    padding: 30px 20px;
+
+    border-radius: 8px;
+}
+
+.icone {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+.imagem-maior{
+    width: 400px !important;
+    height: 100px !important;
+
+}
+
+.icone img{
+    width: 500px;
+    height: 150px;
+}
+
+.card h3 {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================
+   TELA 3 - ESTATÍSTICAS
+===================================== */
+
+.tela-3 {
+    background-color: #f8f8f4;
+
+    display: flex;
+    align-items: center;
+}
+
+.tela-3 .conteudo {
+    width: 100%;
+}
+
+.tela-3 h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    margin-bottom: 50px;
+
+    color: #333;
+}
+
+
+/* ESTATÍSTICAS */
+
+.estatisticas {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.estatistica {
+    padding: 45px 20px;
+
+    text-align: center;
+
+    border-right: 1px solid #ddd;
+}
+
+.estatistica:last-child {
+    border-right: none;
+}
+
+.numero {
+    font-size: 45px;
+
+    font-weight: bold;
+
+    color: #e2b400;
+
+    margin-bottom: 10px;
+}
+
+.estatistica h3 {
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+.estatistica p {
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+/* =====================================
+   TELA 4 - VERDE
+===================================== */
+
+.tela-4 {
+    background-color: #008c52;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.tela-4 .conteudo {
+    text-align: center;
+}
+
+.tela-4 h2 {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.tela-4 .subtitulo {
+    color: #d8fff0;
+}
+
+
+/* SERVIÇOS */
+
+.servicos {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.servico {
+    padding: 25px 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.servico:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+
+    transform: translateY(-5px);
+}
+
+.servico .icone {
+    color: #008c52;
+}
+
+.servico h3 {
+    margin-bottom: 10px;
+}
+
+.servico p {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #d5f5e8;
+}
+
+
+/* =====================================
+   TELA 5 - ROSA
+===================================== */
+
+.tela-5 {
+    background-color: #ff6f78;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.tela-5 .conteudo {
+    width: 100%;
+}
+
+.tela-5 h2 {
+    text-align: center;
+
+    font-size: 38px;
+
+    margin-bottom: 50px;
+}
+
+
+/* INFORMAÇÕES */
+
+.informacoes {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.informacao {
+    background-color: rgba(255, 255, 255, 0.15);
+
+    padding: 30px;
+
+    border-radius: 7px;
+}
+
+.informacao h3 {
+    margin-bottom: 15px;
+}
+
+.informacao p {
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.rodape {
+    text-align: center;
+
+    margin-top: 60px;
+
+    font-size: 14px;
+
+    opacity: 0.8;
+}
+
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 800px) {
+
+    .cards,
+    .estatisticas,
+    .servicos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .informacoes {
+        grid-template-columns: 1fr;
+    }
+
+    .tela-1 h1 {
+        font-size: 38px;
+    }
+
+    .tela-1,
+    .tela-2,
+    .tela-3,
+    .tela-4,
+    .tela-5 {
+        min-height: auto;
+
+        padding: 80px 0;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .cards,
+    .estatisticas,
+    .servicos {
+        grid-template-columns: 1fr;
+    }
+
+    .estatistica {
+        border-right: none;
+
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tela-1 h1 {
+        font-size: 32px;
+    }
+
+    .tela-1 p {
+        font-size: 15px;
+    }
+}
